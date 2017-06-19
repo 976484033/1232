@@ -1,0 +1,641 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>BimShow | BimViz</title>
+	<meta charset="utf-8" />
+	<!-- BEGIN BASE CSS STYLE -->
+	<link href="./css/jquery-ui.min.css" rel="stylesheet">
+	<link href="./css/bootstrap.css" rel="stylesheet">
+	<!-- <link href="./css/animate.min.css" rel="stylesheet"> -->
+	<link href="./css/isotope.css" rel="stylesheet">
+	<link href="./css/lightbox.css" rel="stylesheet">
+	<link href="./css/base.css" rel="stylesheet">
+	<!-- END BASE CSS STYLE -->
+
+	<!-- BEGIN PAGE LEVEL STYLE -->
+	<link href="./css/index.css" rel="stylesheet">
+	<!-- END PAGE LEVEL STYLE -->
+
+</head>
+<body>
+
+
+<div class="page">
+	<!-- begin header -->
+	<div class="header clearfix">
+		<div class="logo fl">
+			<a href="#"></a>
+		</div>
+		<div class="search fr">
+			<form>
+				<input type="text" name="" placeholder="Enter keyword" class=".fs-sm">
+				<button type="submit" >
+					<span class="glyphicon glyphicon-search"></span>
+				</button>
+			</form>
+		</div>
+	</div>
+	<!-- end header -->
+	<!-- begin content -->
+	<div class="content clearfix" id="content">
+		<!-- begin nav -->
+		<div class="nav" id="options">
+			<ul class="nav nav-pills clearfix" id="filter" data-option-key="filter">
+  				<li class="fl" role="presentation"><a class="active" href="#show-all" data-option-value="*">All</a></li>
+  				<li class="fl" role="presentation"><a href="#building" data-option-value=".building">Building</a></li>
+  				<li class="fl" role="presentation"><a href="#site" data-option-value=".site">Site</a></li>
+  				<li class="fl" role="presentation"><a href="#metro" data-option-value=".metro">Metro</a></li>
+  				<li class="fl" role="presentation"><a href="#factory" data-option-value=".factory">Factory</a></li>
+  				<li class="fl" role="presentation"><a href="#electromechanical" data-option-value=".electromechanical">Electromechanical</a></li>
+  				<li class="fl" role="presentation"><a href="#big" data-option-value=".big">Big Building</a></li>
+  				<li class="fl" role="presentation"><a href="#part" data-option-value=".part">Part</a></li>
+  				<li class="fl" role="presentation"><a href="#others" data-option-value=".others">Others</a></li>
+			</ul>
+		</div>
+		<!-- end nav -->
+		<div class="gallery clearfix" id="gallery">
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/1.png"></a>
+					<span class="image-captions fs-md">小别野</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">House</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/2.png"></a>
+					<span class="image-captions fs-md">教学楼</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">School Building</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="others fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/3.png"></a>
+					<span class="image-captions fs-md">管线</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Pipe</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/4.png"></a>
+					<span class="image-captions fs-md">单楼层</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">One Floor</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="metro fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/5.png"></a>
+					<span class="image-captions fs-md">高架车站</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Elevated Station</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/6.png"></a>
+					<span class="image-captions fs-md">联排别墅</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Townhouse</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building site fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/7.png"></a>
+					<span class="image-captions fs-md">节能房屋</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">GreenHouse</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building factory fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/8.png"></a>
+					<span class="image-captions fs-md">小厂房</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Factory</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="building part fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/9.png"></a>
+					<span class="image-captions fs-md">大堂楼层</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Lobby Floor</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="factory part fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/10.png"></a>
+					<span class="image-captions fs-md">厂房框架</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Part of Factory</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="building site fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/11.png"></a>
+					<span class="image-captions fs-md">四合院</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Siheyuan</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building big electromechanical fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/12.png"></a>
+					<span class="image-captions fs-md">商场+B5机电</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Shopping Mall</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building electromechanical fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/13.png"></a>
+					<span class="image-captions fs-md">大楼+供水管道</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Building With Pipes</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="metro electromechanical fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/14.png"></a>
+					<span class="image-captions fs-md">车站机电</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Pipes of Elevated Station</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building site fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/15.png"></a>
+					<span class="image-captions fs-md">庭院</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Courtyard</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/16.png"></a>
+					<span class="image-captions fs-md">小厂房2</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Factory2</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="factory fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/17.png"></a>
+					<span class="image-captions fs-md">商务区大楼</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Business Building</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building site fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/18.png"></a>
+					<span class="image-captions fs-md">博物馆</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Museum</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building others fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/19.png"></a>
+					<span class="image-captions fs-md">机房</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Facility room</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="part electromechanical fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/20.png"></a>
+					<span class="image-captions fs-md">学校南北楼</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">School Buildings</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="building site fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/21.png"></a>
+					<span class="image-captions fs-md">酒店</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Hotel</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/22.png"></a>
+					<span class="image-captions fs-md">公寓</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Apartment Building</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building part fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/23.png"></a>
+					<span class="image-captions fs-md">裙房</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Annex</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="building part fl">
+				<div class="image-inners">
+					<a href="#"><img src="./images/1/24.png"></a>
+					<span class="image-captions fs-md">现代别墅</span>
+				</div>
+				<div class="image-info">
+					<h4 class="title fs-sm">Apartment Building</h4>
+					<div class="stars">
+						<!-- begin five-pointed star -->
+						<div class="fl">
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star active"></span>
+							<span class="glyphicon glyphicon-star"></span>
+							<span class="glyphicon glyphicon-star"></span>
+						</div>
+						<!-- end five-pointed star -->
+						<div class="fr fs-xs">
+							<span>by <a href="#">BimViz</a></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+	<!-- end content -->
+
+
+	<script type="text/javascript" src="./js/jquery-1.9.1.min.js"></script>
+	<script type="text/javascript" src="./js/jquery-migrate-1.1.0.min.js"></script>
+	<script type="text/javascript" src="./js/bootstrap.js"></script>
+	<script type="text/javascript" src="./js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="./js/jquery.isotope.min.js"></script>
+	
+
+  	<script>
+
+  		$('#filter a').click(function(){
+  			$('#filter a').removeClass("active");
+  			$(this).addClass("active");
+
+  			var selector = $(this).attr('data-option-value');
+  			$('#gallery').isotope({ filter: selector });
+  			return false;
+
+		});
+  	</script>	
+</div>
+</body>
+</html>
